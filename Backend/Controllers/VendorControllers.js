@@ -50,7 +50,7 @@ const VendorLogin= async(req,res)=>{
    if(!validPassword){return res.status(404).json("Invalid password")
    }
 
-   const token = jwt.sign({ vendorId: vendor._id }, SecretKey, { expiresIn: '1h' });
+   const token = jwt.sign({ vendorId: vendor._id }, SecretKey, { expiresIn: '30d' });
 
    
 
