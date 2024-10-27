@@ -3,11 +3,10 @@ const app = express();
 const bcrypt=require('bcrypt');
 const vendor=require('../Models/vendors');
 const jwt = require('jsonwebtoken');
-const dotEnv= require('dotenv');
 
-dotEnv.config();
 
-const SecretKey= process.env.WhatIsYourJwtName
+
+const SecretKey= "MyJwtNameIsJwt"
 
 
 

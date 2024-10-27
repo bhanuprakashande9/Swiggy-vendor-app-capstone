@@ -24,7 +24,7 @@ const image = req.file? req.file.filename: undefined;
 
 const vendor = await Vendor.findById(req.vendorID)
 if (!vendor){
-    res.status(404).json({message:"vendor not found "})
+    res.status(404).json({message:"vendor not found - "})
 }
 
 const firm = new firm({
