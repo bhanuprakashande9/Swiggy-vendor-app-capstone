@@ -16,7 +16,7 @@ const decoded = jwt.verify(token, SecretKey)
 const vendor = await Vendor.findById(decoded.vendorID)
 
 if (!vendor){
-   return res.status(404).json({error:"Vendor not found -Token"});
+   return res.status(404).json(decoded);
 }
 
 req.vendorID= vendor._id
