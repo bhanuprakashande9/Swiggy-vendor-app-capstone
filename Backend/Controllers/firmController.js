@@ -1,5 +1,5 @@
 const firm=require('../Models/firm');
-const vendor=require('../Models/vendors');
+const Vendor=require('../Models/vendors');
 const multer= require('multer');
 const path = require('path'); 
 
